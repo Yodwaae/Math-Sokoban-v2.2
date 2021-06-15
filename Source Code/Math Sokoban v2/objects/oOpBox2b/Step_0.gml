@@ -10,7 +10,7 @@ if position_meeting(x-sprite_width,y,oNumBox) and position_meeting(x+sprite_widt
 	box2 = instance_position(x+sprite_width,y,oNumBox);
 	num2 = box2.valeur;
 	
-	calcul = true;
+	if num1 < 10000	and num2 < 10000 calcul = true;
 }
 
 // Vérifie sur l'axe vertical
@@ -23,7 +23,7 @@ if position_meeting(x,y-sprite_height,oNumBox) and position_meeting(x,y+sprite_h
 	box2 = instance_position(x,y+sprite_height,oNumBox);
 	num2 = box2.valeur;
 	
-	calcul = true;
+	if num1 < 10000	and num2 < 10000 calcul = true;
 }
 
 /// Procéde au calcul

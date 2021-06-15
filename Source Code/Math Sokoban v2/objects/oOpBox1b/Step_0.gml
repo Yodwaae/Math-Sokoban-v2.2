@@ -7,7 +7,7 @@ if position_meeting(x-sprite_width,y,oNumBox){
 	box1 = instance_position(x-sprite_width,y,oNumBox);
 	num1 = box1.valeur;
 	
-	calcul = true;
+	if num1 < 10000	calcul = true;
 }
 
 if position_meeting(x+sprite_width,y,oNumBox){
@@ -15,7 +15,7 @@ if position_meeting(x+sprite_width,y,oNumBox){
 	box1 = instance_position(x+sprite_width,y,oNumBox);
 	num1 = box1.valeur;
 	
-	calcul = true;
+	if num1 < 10000	calcul = true;
 }
 
 
@@ -26,15 +26,15 @@ if position_meeting(x,y-sprite_height,oNumBox){
 	box1 = instance_position(x,y-sprite_height,oNumBox);
 	num1 = box1.valeur;
 		
-	calcul = true;
+	if num1 < 10000	calcul = true;
 }
 
 if position_meeting(x,y+sprite_height,oNumBox){
 	
 	box1 = instance_position(x,y+sprite_height,oNumBox);
 	num1 = box1.valeur;
-		
-	calcul = true;
+	
+	if num1 < 10000	calcul = true;
 }
 
 // Procéde au calcul
@@ -61,7 +61,8 @@ if calcul = true{
 	}
 	
 		if type == "sqrt" or type == "^1/2"{ // Racine carré
-		newValue = sqrt(num1);	
+		if num1 >= 0 newValue = sqrt(num1);
+		else newValue = 10001;
 		}
 
 	
