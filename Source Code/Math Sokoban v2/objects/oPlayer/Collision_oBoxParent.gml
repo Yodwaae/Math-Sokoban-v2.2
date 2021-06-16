@@ -1,6 +1,6 @@
 // Le joueur pousse une caisse
-if image_angle = 0 other.x += sprite_width;
-if image_angle = 180 other.x += -sprite_width;
-if image_angle = 90 other.y += -sprite_height;
-if image_angle = 270 other.y += sprite_height;
+if sprite_index = sPlayerD other.x += sprite_width;
+if sprite_index = sPlayerA other.x += -sprite_width;
+if sprite_index = sPlayerW other.y += -sprite_height;
+if sprite_index = sPlayerS other.y += sprite_height;
 
