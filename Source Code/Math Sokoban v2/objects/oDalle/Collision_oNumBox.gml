@@ -52,7 +52,7 @@ else{
 		newB = true;
 		valeur = other.newValue;
 		typeD = other.typeD;
-		if valeur >= 10000 image_index = 1;
+		if valeur >= 10000 sprite_index = sBoxError;
 	
 	}
 }

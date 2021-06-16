@@ -1,7 +1,7 @@
 //Initialisation des variables
 
 typeD = 0;
-// Changement de sprite si nécessaire
+image_speed = 0;
 
-if valeur >= 10000 image_index = 1;
+
 

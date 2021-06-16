@@ -6,6 +6,7 @@
     {"id":{"name":"rLevel2","path":"rooms/rLevel2/rLevel2.yy",},"order":3,},
     {"id":{"name":"sBox","path":"sprites/sBox/sBox.yy",},"order":10,},
     {"id":{"name":"oLvlSelection","path":"objects/oLvlSelection/oLvlSelection.yy",},"order":8,},
+    {"id":{"name":"sBoxError","path":"sprites/sBoxError/sBoxError.yy",},"order":17,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":1,},
     {"id":{"name":"oNumBox","path":"objects/oNumBox/oNumBox.yy",},"order":1,},
     {"id":{"name":"TileSet3","path":"tilesets/TileSet3/TileSet3.yy",},"order":2,},
