@@ -1,24 +1,6 @@
 // Débloque le niveau suivant
 
 oGame.unlocked[nextRoom] = true;
-//switch(currentRoom){
-	
-//case 1 : 
-//	oGame.unlocked[2] = true;
-//	break;
-
-//case 2 : 
-//	oGame.unlocked[3] = true;
-//	break;
-	
-//case 3 : 
-//	oGame.unlocked[4] = true;
-//	break;
-	
-//default :
-//	oGame.unlocked[1] = true;
-//	break;
-//}
 
 // Overwrite old save
 
