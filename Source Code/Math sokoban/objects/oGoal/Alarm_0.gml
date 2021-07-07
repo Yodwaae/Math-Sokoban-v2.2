@@ -28,3 +28,8 @@ if (file_exists(SAVEFILE)){
 //Crée le bouton Home
 
 instance_create_depth(0.65*room_width,0.7*room_height,-1000,oButtonHome)
+
+//Crée le bouton Replay
+
+instance_create_depth(0.45*room_width,0.7*room_height,-1000,oButtonReplay)
+
