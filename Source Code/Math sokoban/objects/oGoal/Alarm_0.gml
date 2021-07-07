@@ -1,3 +1,7 @@
+//Empeche le joueur de bouger une fois le niveau finis
+
+oPlayer.canMove = false;
+
 // Débloque le niveau suivant
 
 oGame.unlocked[nextRoom] = true;
@@ -21,4 +25,6 @@ if (file_exists(SAVEFILE)){
 	}
 }
 
-room_goto(rLevelSelection)
+//Crée le bouton Home
+
+instance_create_depth(0.65*room_width,0.7*room_height,-1000,oButtonHome)

@@ -39,6 +39,10 @@ if position_meeting(x,y+sprite_height,oNumBox){
 
 // Procéde au calcul
 
+//Empeche le joueur de bouger pdt le calcul
+
+oPlayer.canMove = false;
+
 if calcul = true{
 	
 	deviation = false;

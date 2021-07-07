@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "sBox",
+    "path": "folders/Sprites/sBox.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBoxLevelSelection",
