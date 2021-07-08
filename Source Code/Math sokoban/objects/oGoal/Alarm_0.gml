@@ -25,11 +25,19 @@ if (file_exists(SAVEFILE)){
 	}
 }
 
+//Noirci le fond de niveau
+
+if !instance_exists(oBlackEndLevel) instance_create_depth(0.5*room_width, 0.5*room_height,-999,oBlackEndLevel);
+
+//Crée l'animation de fin de niveau
+
+if !instance_exists(oEndLvL) instance_create_depth(0.5*room_width,0.2*room_height,-1000,oEndLvL);
+
 //Crée le bouton Home
 
-instance_create_depth(0.65*room_width,0.7*room_height,-1000,oButtonHome)
+if !instance_exists(oButtonHome) instance_create_depth(0.65*room_width,0.7*room_height,-1000,oButtonHome);
 
 //Crée le bouton Replay
 
-instance_create_depth(0.45*room_width,0.7*room_height,-1000,oButtonReplay)
+if !instance_exists(oButtonReplay) instance_create_depth(0.35*room_width,0.7*room_height,-1000,oButtonReplay);
 

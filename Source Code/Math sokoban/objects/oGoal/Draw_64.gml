@@ -44,6 +44,7 @@ if valeur4 == true{
 
 //Affiche la valeur cible de la salle
 
+draw_set_halign(fa_center)
 draw_set_font(fValeur)
 draw_set_color(col1)
 draw_text_transformed(pos1,0.1*room_height,string(valeur1draw),1.5,1.5,0)
