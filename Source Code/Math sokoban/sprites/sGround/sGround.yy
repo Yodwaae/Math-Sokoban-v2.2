@@ -93,8 +93,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "sLevelBuilding",
+    "path": "folders/Sprites/sLevelBuilding.yy",
   },
   "resourceVersion": "1.0",
   "name": "sGround",

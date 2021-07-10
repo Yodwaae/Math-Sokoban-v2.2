@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sBlqckEndLvl",
-    "path": "sprites/sBlqckEndLvl/sBlqckEndLvl.yy",
+    "name": "sBlackEndLvl",
+    "path": "sprites/sBlackEndLvl/sBlackEndLvl.yy",
   },
   "solid": false,
   "visible": true,
