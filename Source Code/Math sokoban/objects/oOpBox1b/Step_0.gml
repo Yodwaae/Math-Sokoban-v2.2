@@ -41,10 +41,11 @@ if position_meeting(x,y+sprite_height,oNumBox){
 
 //Empeche le joueur de bouger pdt le calcul
 
-oPlayer.canMove = false;
+
 
 if calcul = true{
 	
+	oPlayer.canMove = false;
 	deviation = false;
 	
 	if type == "^2"{ // Carré	
