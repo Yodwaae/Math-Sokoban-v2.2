@@ -4,26 +4,37 @@ oPlayer.canMove = false;
 
 // Débloque le niveau suivant
 
-oGame.unlocked[nextRoom] = true;
+oGame.unlocked[oGame.special][nextRoom] = true;
 
 // Overwrite old save
 
 if (file_exists(SAVEFILE)){
 	var verif;
+	var verifA;
 	var fileR;
+	
 	fileR = file_text_open_read(SAVEFILE);
 	verif = file_text_read_real(fileR);
-	file_text_close(fileR)
 	
-	if verif < nextRoom{
-
-		// Create new save
+	verifA = file_text_read_real(fileR); //Ajouter ces deux lignes pour chaque nouveaux groupe de niveaux (ainsi que les trois autres marquées d'un point rouge)
+	file_text_readln(fileR)
+	
+	file_text_close(fileR);
+	
+		// Create new save 
 		var fileW;
 		fileW = file_text_open_write(SAVEFILE);
-		file_text_write_real(fileW,nextRoom)
+		if verif < nextRoom and oGame.special == 1 file_text_write_real(fileW,nextRoom); //Verifie que le niveau suivant soit bloqué (débloque si c'est le cas)
+		else file_text_write_real(fileW,verif);
+		
+		
+		file_text_writeln(fileW)
+		if verifA < nextRoom and oGame.special == 2 file_text_write_real(fileW,nextRoom); //Vérifie que le premier charactère soit un A et que le niveau suivant soit bloqué (débloque si c'est le cas)
+		else file_text_write_real(fileW,verifA);
+		
 		file_text_close(fileW)
-	}
 }
+
 
 //Noirci le fond de niveau
 
