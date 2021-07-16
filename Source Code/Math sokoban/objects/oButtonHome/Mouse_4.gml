@@ -1,3 +1,6 @@
 //Renvoie au menu de sélection de niveau
 
-room_goto(rLevelSelection)
+var _target = rLevelSelection	;
+
+TransitionStart(_target,SqFadeOut,SqFadeIn);
+

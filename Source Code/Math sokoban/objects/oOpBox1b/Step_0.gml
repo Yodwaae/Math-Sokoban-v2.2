@@ -39,13 +39,15 @@ if position_meeting(x,y+sprite_height,oNumBox){
 
 // Procéde au calcul
 
-//Empeche le joueur de bouger pdt le calcul
+
 
 
 
 if calcul = true{
 	
+	//Empeche le joueur de bouger pdt le calcul
 	oPlayer.canMove = false;
+	
 	deviation = false;
 	
 	if type == "^2"{ // Carré	
