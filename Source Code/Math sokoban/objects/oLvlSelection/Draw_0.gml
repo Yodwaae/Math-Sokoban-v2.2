@@ -1,8 +1,5 @@
 draw_set_font(fValeur)
 
-//Si niveau basique
-
-
 //Affiche la valeur
 
 draw_self();

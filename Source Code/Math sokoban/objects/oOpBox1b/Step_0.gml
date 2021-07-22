@@ -39,10 +39,6 @@ if position_meeting(x,y+sprite_height,oNumBox){
 
 // Procéde au calcul
 
-
-
-
-
 if calcul = true{
 	
 	//Empeche le joueur de bouger pdt le calcul
@@ -75,21 +71,3 @@ if calcul = true{
 	if alarm[0] == -1 alarm[0] = 60;
 	image_speed = 1;
 }
-
-	
-	
-//// Détruit les objets obsolètes	
-
-//	instance_destroy(box1)
-//	instance_destroy(self)
-
-	
-//// Crée le nouveau bloc num
-
-//	inst = instance_create_layer(x,y,"Instances",oNumBox)
-//	with(inst){
-//		newB = true;
-//		valeur = other.newValue;
-//		if valeur >= 10000 sprite_index = sBoxError;
-//	}
-//}

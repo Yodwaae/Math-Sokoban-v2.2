@@ -49,7 +49,6 @@
     {"id":{"name":"sCam","path":"sprites/sCam/sCam.yy",},"order":8,},
     {"id":{"name":"oButtonParent","path":"objects/oButtonParent/oButtonParent.yy",},"order":0,},
     {"id":{"name":"fGoal","path":"fonts/fGoal/fGoal.yy",},"order":2,},
-    {"id":{"name":"sFondlevel","path":"sprites/sFondlevel/sFondlevel.yy",},"order":3,},
     {"id":{"name":"rLevelA2","path":"rooms/rLevelA2/rLevelA2.yy",},"order":6,},
     {"id":{"name":"oButtonReplay","path":"objects/oButtonReplay/oButtonReplay.yy",},"order":2,},
     {"id":{"name":"sPlayerA","path":"sprites/sPlayerA/sPlayerA.yy",},"order":3,},

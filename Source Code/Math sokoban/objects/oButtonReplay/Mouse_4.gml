@@ -1,5 +1,3 @@
 //Relance le niveau
 
-var _target = room;
-
-TransitionStart(_target,SqFadeOut,SqFadeIn);
+TransitionStart(room,SqFadeOut,SqFadeIn);

@@ -1,6 +1,6 @@
 // Le curseur toujours au dessus
 
- depth = -1000;
+depth = -1000;
  
  // Supprime la sprite du curseur
 

@@ -1,6 +1,5 @@
 // Vérifie si l'objectif est atteint
 
-//if valeur == valeur - frac(valeur) valeur = int64(valeur);
 if valeur = oGoal.valeur1target{
 	oGoal.valeur1reached = true;
 }

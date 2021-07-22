@@ -1,5 +1,6 @@
 //Initialisation
 
+randomize()// Pour faire varier les msg de fins de niveaux
 special = 1;
 global.cameraX = 385;
 global.cameraY = 2400;
@@ -39,7 +40,7 @@ else{ //Lecture du fichier de sauvegarde
 	
 	// Débloquage des niveaux 
 
-	for (var i = 1; i < unlocking + 1; i +=1){ //Débloque les niveaux basiques
+	for (var i = 1; i <= unlocking; i +=1){ //Débloque les niveaux basiques
 		unlocked[1][i] = 1;
 	}
 	

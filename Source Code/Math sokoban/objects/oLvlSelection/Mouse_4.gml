@@ -5,8 +5,7 @@ if oGame.unlocked[special][valeur] == 1{
 	global.cameraY = oCamera.y
 	oGame.special = special;
 	
-	var _target = cible;
-	TransitionStart(_target,SqFadeOut,SqFadeIn);
+	TransitionStart(cible,SqFadeOut,SqFadeIn);
 	
 }
 else{

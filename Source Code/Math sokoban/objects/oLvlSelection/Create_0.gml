@@ -1,6 +1,5 @@
 //Assigne un numéro d'array à chaque groupe	de niveaux
 
-
 	switch LevelGroup
 		{
 			case 0 :
