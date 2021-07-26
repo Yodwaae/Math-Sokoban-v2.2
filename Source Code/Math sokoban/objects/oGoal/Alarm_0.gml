@@ -40,6 +40,7 @@ if (file_exists(SAVEFILE)){
 
 if !instance_exists(oBlackEndLevel) instance_create_depth(0.5*room_width, 0.5*room_height,-999,oBlackEndLevel);
 
+
 //Crée l'animation de fin de niveau
 
 if !instance_exists(oEndLvL) instance_create_depth(0.5*room_width,0.2*room_height,-1000,oEndLvL);

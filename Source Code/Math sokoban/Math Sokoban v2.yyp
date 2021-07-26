@@ -26,6 +26,7 @@
     {"id":{"name":"oLinkLvlSelec","path":"objects/oLinkLvlSelec/oLinkLvlSelec.yy",},"order":10,},
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},"order":5,},
     {"id":{"name":"oBlackEndLevel","path":"objects/oBlackEndLevel/oBlackEndLevel.yy",},"order":15,},
+    {"id":{"name":"oPauseMenu","path":"objects/oPauseMenu/oPauseMenu.yy",},"order":16,},
     {"id":{"name":"sLinkLvlSelec","path":"sprites/sLinkLvlSelec/sLinkLvlSelec.yy",},"order":9,},
     {"id":{"name":"sButtonHome","path":"sprites/sButtonHome/sButtonHome.yy",},"order":0,},
     {"id":{"name":"oDalle","path":"objects/oDalle/oDalle.yy",},"order":3,},
