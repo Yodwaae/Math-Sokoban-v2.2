@@ -29,7 +29,7 @@
 7,1,1,1,1,1,1,1,1,1,1,5,4,
 ],},"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Tiles_1","tags":[],"resourceType":"GMRTileLayer",},
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":416.0,"resourceVersion":"1.0","name":"inst_2F64C901","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":416.0,"y":160.0,"resourceVersion":"1.0","name":"inst_2F64C901","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"valeur","path":"objects/oNumBox/oNumBox.yy",},"objectId":{"name":"oNumBox","path":"objects/oNumBox/oNumBox.yy",},"value":"6","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oNumBox","path":"objects/oNumBox/oNumBox.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":352.0,"resourceVersion":"1.0","name":"inst_6F6F8E7C","tags":[],"resourceType":"GMRInstance",},
@@ -181,7 +181,7 @@
   "sequenceId": null,
   "roomSettings": {
     "inheritRoomSettings": false,
-    "Width": 800,
+    "Width": 832,
     "Height": 800,
     "persistent": false,
   },
