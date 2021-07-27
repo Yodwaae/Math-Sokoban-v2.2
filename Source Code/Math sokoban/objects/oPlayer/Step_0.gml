@@ -3,6 +3,7 @@ if canMove == true{
 	// Avancer (w)
 
 	if keyboard_check_pressed(ord("W")){
+		movementCounter +=1;
 		numVer = 0;
 		sprite_index = sPlayerW;
 		if position_meeting(x,y - sprite_height,oNumBox) numVer = instance_position(x,y - sprite_height,oNumBox).valeur;
@@ -16,6 +17,7 @@ if canMove == true{
 	// Reculer (s)
 
 	if keyboard_check_pressed(ord("S")){
+		movementCounter +=1;
 		numVer = 0;
 		sprite_index = sPlayerS;
 		if position_meeting(x,y + sprite_height,oNumBox) numVer = instance_position(x,y + sprite_height,oNumBox).valeur;
@@ -28,6 +30,7 @@ if canMove == true{
 	//Droite (d)
 
 	if keyboard_check_pressed(ord("D")){
+		movementCounter +=1;
 		numVer = 0;
 		sprite_index = sPlayerD;
 		if position_meeting(x + sprite_width,y,oNumBox) numVer = instance_position(x + sprite_width,y,oNumBox).valeur;
@@ -40,6 +43,7 @@ if canMove == true{
 	// Gauche (a)
 
 	if keyboard_check_pressed(ord("A")){
+		movementCounter +=1;
 		numVer = 0;
 		sprite_index = sPlayerA;
 		if position_meeting(x- sprite_width,y,oNumBox) numVer = instance_position(x - sprite_width,y,oNumBox).valeur;

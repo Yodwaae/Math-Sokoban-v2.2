@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"sBoxLevelSelection","path":"sprites/sBoxLevelSelection/sBoxLevelSelection.yy",},"order":0,},
+    {"id":{"name":"oMovementLimit","path":"objects/oMovementLimit/oMovementLimit.yy",},"order":3,},
     {"id":{"name":"sFond","path":"sprites/sFond/sFond.yy",},"order":0,},
     {"id":{"name":"oBoxParent","path":"objects/oBoxParent/oBoxParent.yy",},"order":0,},
     {"id":{"name":"rLevel2","path":"rooms/rLevel2/rLevel2.yy",},"order":3,},
@@ -59,6 +60,7 @@
     {"id":{"name":"oOpBox2b","path":"objects/oOpBox2b/oOpBox2b.yy",},"order":2,},
     {"id":{"name":"rLevelA3","path":"rooms/rLevelA3/rLevelA3.yy",},"order":7,},
     {"id":{"name":"rLevel3","path":"rooms/rLevel3/rLevel3.yy",},"order":4,},
+    {"id":{"name":"sMovementLimit","path":"sprites/sMovementLimit/sMovementLimit.yy",},"order":2,},
     {"id":{"name":"rLevel1","path":"rooms/rLevel1/rLevel1.yy",},"order":0,},
   ],
   "Options": [
@@ -115,7 +117,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.3.570",
+    "IDEVersion": "2.3.3.574",
   },
   "resourceVersion": "1.4",
   "name": "Math Sokoban v2",
