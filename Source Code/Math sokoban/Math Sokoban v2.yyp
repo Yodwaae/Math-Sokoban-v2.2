@@ -46,6 +46,7 @@
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":7,},
     {"id":{"name":"oPosZone","path":"objects/oPosZone/oPosZone.yy",},"order":0,},
     {"id":{"name":"sButtonReplay","path":"sprites/sButtonReplay/sButtonReplay.yy",},"order":1,},
+    {"id":{"name":"oMusicIndicator","path":"objects/oMusicIndicator/oMusicIndicator.yy",},"order":18,},
     {"id":{"name":"sDalle","path":"sprites/sDalle/sDalle.yy",},"order":4,},
     {"id":{"name":"oButtonHome","path":"objects/oButtonHome/oButtonHome.yy",},"order":1,},
     {"id":{"name":"sPlayerS","path":"sprites/sPlayerS/sPlayerS.yy",},"order":0,},

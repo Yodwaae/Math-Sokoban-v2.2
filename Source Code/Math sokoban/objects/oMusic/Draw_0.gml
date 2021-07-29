@@ -1,7 +1,10 @@
 if room = rLevelSelection{
 
+	x = oCamera.x - 358
+	y = oCamera.y + 388
+
 	//Music credits
-	draw_self();
+
 	draw_set_font(fValeur);
 	draw_set_color(c_white);
 	draw_set_halign(fa_left);
