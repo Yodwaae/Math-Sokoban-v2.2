@@ -14,6 +14,7 @@
   ],
   "layers": [
     {"instances":[
+        {"properties":[],"isDnd":false,"objectId":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":2368.0,"resourceVersion":"1.0","name":"inst_7317B3C7","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oGame","path":"objects/oGame/oGame.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":2368.0,"resourceVersion":"1.0","name":"inst_15DDEEDF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"special","path":"objects/oLinkLvlSelec/oLinkLvlSelec.yy",},"objectId":{"name":"oLinkLvlSelec","path":"objects/oLinkLvlSelec/oLinkLvlSelec.yy",},"value":"2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -71,6 +72,7 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_7317B3C7","path":"rooms/rLevelSelection/rLevelSelection.yy",},
     {"name":"inst_4DA95AE","path":"rooms/rLevelSelection/rLevelSelection.yy",},
     {"name":"inst_15DDEEDF","path":"rooms/rLevelSelection/rLevelSelection.yy",},
     {"name":"inst_311CE40A","path":"rooms/rLevelSelection/rLevelSelection.yy",},
