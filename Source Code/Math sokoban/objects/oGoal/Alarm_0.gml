@@ -57,4 +57,3 @@ if !instance_exists(oButtonReplay) instance_create_depth(0.35*room_width,0.7*roo
 //Crée l'affichage de l'obj bonus
 
 if !instance_exists(oMovementLimit) instance_create_depth(0.5*room_width,0.7*room_height,-1000,oMovementLimit);
-
