@@ -59,6 +59,7 @@
     {"id":{"name":"oButtonReplay","path":"objects/oButtonReplay/oButtonReplay.yy",},"order":2,},
     {"id":{"name":"sPlayerA","path":"sprites/sPlayerA/sPlayerA.yy",},"order":3,},
     {"id":{"name":"fEndLvl","path":"fonts/fEndLvl/fEndLvl.yy",},"order":1,},
+    {"id":{"name":"string_replace_at","path":"scripts/string_replace_at/string_replace_at.yy",},"order":1,},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},"order":25,},
     {"id":{"name":"oNegZone","path":"objects/oNegZone/oNegZone.yy",},"order":1,},
     {"id":{"name":"oOpBox2b","path":"objects/oOpBox2b/oOpBox2b.yy",},"order":2,},

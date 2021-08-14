@@ -6,6 +6,7 @@ oPlayer.canMove = false;
 
 oGame.unlocked[oGame.special][nextRoom] = true;
 
+
 // Overwrite old save
 
 if (file_exists(SAVEFILE)){
