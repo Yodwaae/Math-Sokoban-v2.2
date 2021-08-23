@@ -6,7 +6,55 @@ oPlayer.canMove = false;
 
 oGame.unlocked[oGame.special][nextRoom] = true;
 
+//débloque l'étoile
 
+if oGame.starUnlocked[oGame.special][nextRoom] == 0 {
+	
+	if (oPlayer.movementCounter <= oGoal.limit){
+		
+		oGame.starUnlocked[oGame.special][nextRoom-1] = true;
+		
+		//Changing star old savefile
+		
+		//reading the file
+		
+		if (file_exists(STARSAVEFILE)){
+			var fileR;
+			var starString;
+			
+			fileR = file_text_open_read(STARSAVEFILE);
+			
+			for (var i=1; i <= oGame.special; i++){
+				
+				starString[i] = file_text_read_string(fileR);
+				file_text_readln(fileR);
+				
+			}
+			
+			file_text_close(fileR);
+			
+			//Overwriting old start save file
+			
+			var fileW;
+			
+			fileW = file_text_open_write(STARSAVEFILE);
+			
+			starString[oGame.special]  = string_replace_at(starString[oGame.special],nextRoom-1,1);
+			
+			for (var i  = 1; i <= oGame.special; i++){
+				
+				file_text_write_string(fileW,starString[i]);
+				file_text_writeln(fileW);
+				
+			}
+			
+			file_text_close(fileW);
+			
+		}
+
+	}
+	
+}
 // Overwrite old save
 
 if (file_exists(SAVEFILE)){

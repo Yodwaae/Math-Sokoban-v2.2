@@ -1,5 +1,7 @@
 //Initialisation
 
+depth = -1000;
+
 randomize()// Pour faire varier les msg de fins de niveaux
 special = 1;
 global.cameraX = 385;
@@ -15,6 +17,55 @@ for (var i = 1; i < 6;  i +=1){ //Verouille les niveaux A
 
 unlocked[1][1] = 1;
 
+
+//création de la sauvegarde des étoiles
+
+#macro STARSAVEFILE "StarSaveM.sav"
+
+//Initialisation du fichier de sauvegarde des étoiles
+
+if (!file_exists(STARSAVEFILE)){
+	
+	var SfileW;
+	SfileW = file_text_open_write(STARSAVEFILE);
+	
+	starInialisation[1] = 75*"0"
+	starInialisation[2] = 5*"0"
+	starInialisation[3] = 5*"0"
+	starInialisation[4] = 5*"0"
+	starInialisation[5] = 5*"0"
+	starInialisation[6] = 5*"0"
+	starInialisation[7] = 5*"0"
+	
+	for (var i = 1; i <= 7; i++){
+		
+		file_text_write_string(SfileW,starInialisation[i]);
+		file_text_writeln(SfileW);
+	
+	}
+
+file_text_close(SfileW);
+
+}
+
+//débloquage des étoiles
+
+var SfileR;
+SfileR = file_text_open_read(STARSAVEFILE);
+
+for (var i = 1; i <= 7 ; i++){ //8 car il y a 7 catégorie de niveaux, a changer si nouvelle catégorie de niveau
+	
+	unlockingStar[i] = file_text_read_string(SfileR);
+	file_text_readln(SfileR);
+	
+	for (var j = 1; j <= string_length(unlockingStar[i]); j++){
+		
+		if string_char_at(unlockingStar[i],j) == 1 starUnlocked[i][j] = 1;
+		else starUnlocked[i][j] = 0;
+		
+	}
+
+}
 
 //Création de la sauvegarde
 #macro SAVEFILE "SaveM.sav"

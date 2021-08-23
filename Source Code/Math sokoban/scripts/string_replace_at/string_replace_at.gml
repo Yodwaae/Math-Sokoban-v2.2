@@ -6,6 +6,6 @@ function string_replace_at(){
 /// @param pos
 /// @param insert
 
-return string_copy(argument0, 1, argument1-1) + argument2 + string_delete(argument0, 1, argument1);
+return (string_copy(argument0, 1, argument1-1) + string(argument2) + string_delete(argument0, 1, argument1));
 
 }

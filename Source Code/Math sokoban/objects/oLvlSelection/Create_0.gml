@@ -6,9 +6,29 @@
 			special = 1;
 			break;
 			
-			case "A" :  // A rajouter pour chaque nouveaux groupe de niveaux
+			case "A" :  
 			special = 2;
 			break;	
+			
+			case "B" :
+			special = 3;
+			break;
+			
+			case "C" :
+			special = 4;
+			break;
+			
+			case "D" :
+			special = 5;
+			break;
+			
+			case "E" :
+			special = 6;
+			break;
+			
+			case "F" :
+			special = 7;
+			break;
 			
 		}
 		
