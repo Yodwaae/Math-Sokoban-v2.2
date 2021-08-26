@@ -67,6 +67,8 @@ for (var i = 1; i <= 7 ; i++){ //8 car il y a 7 catégorie de niveaux, a changer
 
 }
 
+file_text_close(SfileR);
+
 //Création de la sauvegarde
 #macro SAVEFILE "SaveM.sav"
 
