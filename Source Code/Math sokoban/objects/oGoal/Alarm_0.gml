@@ -19,36 +19,36 @@ if oGame.starUnlocked[oGame.special][nextRoom] == 0 {
 		//reading the file
 		
 		if (file_exists(STARSAVEFILE)){
-			var fileR;
+			var SfileR;
 			var starString;
 			
-			fileR = file_text_open_read(STARSAVEFILE);
+			SfileR = file_text_open_read(STARSAVEFILE);
 			
 			for (var i=1; i <= oGame.special; i++){
 				
-				starString[i] = file_text_read_string(fileR);
-				file_text_readln(fileR);
+				starString[i] = file_text_read_string(SfileR);
+				file_text_readln(SfileR);
 				
 			}
 			
-			file_text_close(fileR);
+			file_text_close(SfileR);
 			
 			//Overwriting old start save file
 			
-			var fileW;
+			var SfileW;
 			
-			fileW = file_text_open_write(STARSAVEFILE);
+			SfileW = file_text_open_write(STARSAVEFILE);
 			
 			starString[oGame.special]  = string_replace_at(starString[oGame.special],nextRoom-1,1);
 			
 			for (var i  = 1; i <= oGame.special; i++){
 				
-				file_text_write_string(fileW,starString[i]);
-				file_text_writeln(fileW);
+				file_text_write_string(SfileW,starString[i]);
+				file_text_writeln(SfileW);
 				
 			}
 			
-			file_text_close(fileW);
+			file_text_close(SfileW);
 			
 		}
 
