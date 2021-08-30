@@ -2,10 +2,6 @@
 
 oPlayer.canMove = false;
 
-// Débloque le niveau suivant
-
-oGame.unlocked[oGame.special][nextRoom] = true;
-
 //débloque l'étoile
 
 if oGame.starUnlocked[oGame.special][nextRoom] == 0 {

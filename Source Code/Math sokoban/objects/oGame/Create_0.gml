@@ -40,7 +40,7 @@ if (!file_exists(SAVEFILE)){
 var fileR;
 fileR = file_text_open_read(SAVEFILE);
 
-for (var i = 1; i <= 7; i++){
+for (var i = 1; i <= 7 ; i++){ //8 car il y a 7 catégorie de niveaux, a changer si nouvelle catégorie de niveau
 	
 	unlockingLevel[i] = file_text_read_string(fileR);
 	file_text_readln(fileR);
@@ -51,10 +51,11 @@ for (var i = 1; i <= 7; i++){
 		else unlocked[i][j] = 0;
 		
 	}
-	
-	file_text_close(fileR);
-	
+
 }
+
+file_text_close(fileR);
+
 
 //création de la sauvegarde des étoiles
 
