@@ -55,36 +55,51 @@ if oGame.starUnlocked[oGame.special][nextRoom] == 0 {
 	}
 	
 }
-// Overwrite old save
+// débloque le niveau suivant
 
-if (file_exists(SAVEFILE)){
-	var verif;
-	var verifA;
-	var fileR;
+if oGame.unlocked[oGame.special][nextRoom] == 0 {
 	
-	fileR = file_text_open_read(SAVEFILE);
-	verif = file_text_read_real(fileR);
+	oGame.unlocked[oGame.special][nextRoom] = 1;
 	
-	verifA = file_text_read_real(fileR); //Ajouter ces deux lignes pour chaque nouveaux groupe de niveaux (ainsi que les trois autres marquées d'un point rouge)
-	file_text_readln(fileR)
+	//changing the save file
 	
-	file_text_close(fileR);
-	
-		// Create new save 
+	if (file_exists(SAVEFILE)){
+		
+		//reading the save file
+		
+		var fileR;
+		fileR = file_text_open_read(SAVEFILE);
+		var LvlString;
+		
+		for (var i = 1; i <= 7; i++){
+			
+			LvlString[i] = file_text_read_string(fileR);
+			file_text_readln(fileR);
+			
+		}
+		
+		file_text_close(fileR);
+		
+		//actually overwriting the savefile
+		
 		var fileW;
 		fileW = file_text_open_write(SAVEFILE);
-		if verif < nextRoom and oGame.special == 1 file_text_write_real(fileW,nextRoom); //Verifie que le niveau suivant soit bloqué (débloque si c'est le cas)
-		else file_text_write_real(fileW,verif);
 		
+		LvlString[oGame.special] = string_replace_at(LvlString[oGame.special],nextRoom,1);
 		
-		file_text_writeln(fileW)
-		if verifA < nextRoom and oGame.special == 2 file_text_write_real(fileW,nextRoom); //Vérifie que le premier charactère soit un A et que le niveau suivant soit bloqué (débloque si c'est le cas)
-		else file_text_write_real(fileW,verifA);
+		for (var i = 1; i <= 7; i++){
+			
+			file_text_write_string(fileW,LvlString[i]);
+			file_text_writeln(fileW);
+			
+		}
 		
-		file_text_close(fileW)
+		file_text_close(fileW);
+		
+	}
+	
 }
-
-
+		
 //Noirci le fond de niveau
 
 if !instance_exists(oBlackEndLevel) instance_create_depth(0.5*room_width, 0.5*room_height,-999,oBlackEndLevel);

@@ -7,16 +7,54 @@ special = 1;
 global.cameraX = 385;
 global.cameraY = 2400;
 
-for (var i = 1; i < 50;  i +=1){ //Verouille les niveaux basiques
-	unlocked[1][i] = 0;
+//Création du fichier de sauvegarde
+
+#macro SAVEFILE "SaveM.sav"
+
+if (!file_exists(SAVEFILE)){
+	
+	var fileW;
+	fileW = file_text_open_write(SAVEFILE);
+	
+	levelInialisation[1] = "1" + 74*"0";
+	levelInialisation[2] = 5*"0";
+	levelInialisation[3] = 5*"0";
+	levelInialisation[4] = 5*"0";
+	levelInialisation[5] = 5*"0";
+	levelInialisation[6] = 5*"0";
+	levelInialisation[7] = 5*"0";
+	
+	for (var i = 1; i <= 7; i++){
+		
+		file_text_write_string(fileW,levelInialisation[i]);
+		file_text_writeln(fileW);
+		
+	}
+	
+	file_text_close(fileW);
+	
 }
 
-for (var i = 1; i < 6;  i +=1){ //Verouille les niveaux A
-	unlocked[2][i] = 0;
+//Lecture du fichier de sauvegarde
+
+var fileR;
+fileR = file_text_open_read(SAVEFILE);
+
+for (var i = 1; i <= 7; i++){
+	
+	unlockingLevel[i] = file_text_read_string(fileR);
+	file_text_readln(fileR);
+	
+	for (var j = 1; j <= string_length(unlockingLevel[i]); j++){
+		
+		if string_char_at(unlockingLevel[i],j) == 1 unlocked[i][j] = 1;
+		else unlocked[i][j] = 0;
+		
+	}
+	
+	file_text_close(fileR);
+	
 }
-
-unlocked[1][1] = 1;
-
 
 //création de la sauvegarde des étoiles
 
@@ -29,13 +67,13 @@ if (!file_exists(STARSAVEFILE)){
 	var SfileW;
 	SfileW = file_text_open_write(STARSAVEFILE);
 	
-	starInialisation[1] = 75*"0"
-	starInialisation[2] = 5*"0"
-	starInialisation[3] = 5*"0"
-	starInialisation[4] = 5*"0"
-	starInialisation[5] = 5*"0"
-	starInialisation[6] = 5*"0"
-	starInialisation[7] = 5*"0"
+	starInialisation[1] = 75*"0";
+	starInialisation[2] = 5*"0";
+	starInialisation[3] = 5*"0";
+	starInialisation[4] = 5*"0";
+	starInialisation[5] = 5*"0";
+	starInialisation[6] = 5*"0";
+	starInialisation[7] = 5*"0";
 	
 	for (var i = 1; i <= 7; i++){
 		
@@ -68,37 +106,3 @@ for (var i = 1; i <= 7 ; i++){ //8 car il y a 7 catégorie de niveaux, a changer
 }
 
 file_text_close(SfileR);
-
-//Création de la sauvegarde
-#macro SAVEFILE "SaveM.sav"
-
-//Initialisation du fichier de sauvegarde
-if (!file_exists(SAVEFILE)){
-	var fileW;
-	fileW = file_text_open_write(SAVEFILE);
-	file_text_write_real(fileW,1);
-	file_text_close(fileW);
-}
-else{ //Lecture du fichier de sauvegarde
-	var fileR;
-	fileR = file_text_open_read(SAVEFILE);
-	unlocking = file_text_read_real(fileR); //vérifie quels niveaux basiques sont débloqués
-	
-	file_text_readln(fileR);
-	unlockingA = file_text_read_real(fileR); //Vérifie quels niveaux A sont débloqués
-	
-	file_text_close(fileR);
-	
-	
-	
-	// Débloquage des niveaux 
-
-	for (var i = 1; i <= unlocking; i +=1){ //Débloque les niveaux basiques
-		unlocked[1][i] = 1;
-	}
-	
-	
-	for (var i = 1; i <= unlockingA; i +=1){ //Débloque les niveaux A
-		unlocked[2][i] = 1;
-	}
-}
